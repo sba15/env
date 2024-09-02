@@ -1,8 +1,12 @@
 import React from 'react'
+// import Navbar from '../../common/navbar'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='text-7xl text-center text-blue-50'>
+      {/* <Navbar/> */}
+      Hello
+    </div>
   )
 }
 
