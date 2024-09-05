@@ -106,7 +106,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section>
+       <section>
         <div className="custom-container mx-auto px-5 max-w-screen-xl">
           <div className="custom-card mb-5">
             <div className="flex flex-col md:flex-row">
@@ -233,8 +233,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
-{/* 
+      </section> 
+
       <div className="p-5 mb-5 bg-white rounded-lg shadow-md">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 w-full flex justify-center">
@@ -262,9 +262,9 @@ const Home = () => {
             </ul>
           </div>
         </div>
-      </div> */}
+      </div> 
 
-{/* 
+
 <div className="p-5 mb-5 bg-white rounded-lg shadow-md">
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 w-full">
@@ -292,7 +292,7 @@ const Home = () => {
           </ul>
         </div>
       </div>
-    </div> */}
+    </div>
 
 <div className="p-5 mb-5 bg-white rounded-lg shadow-md max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row items-center">
