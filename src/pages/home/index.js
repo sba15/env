@@ -87,7 +87,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section>
+      <section>
         <div className="relative bg-white py-20">
           <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
             <img
@@ -229,133 +229,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-<div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-    <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-      <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-        <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
-          Data Orchestration and Management
-        </h2>
-        <ul className="text-base pl-5 list-disc space-y-3 text-left">
-          <li>Database Consulting and Management</li>
-          <li>Data Fabric Architecture for Self-Service</li>
-          <li>Data Warehousing, Data Lakes, and Lakehouses</li>
-          <li>
-            Partner Ecosystem Services - Migration, Administration,
-            Performance Tuning, Security, and Compliance Services
-          </li>
-        </ul>
-      </div>
-      <div className="md:w-1/2 w-full p-1 md:p-4">
-        <div className="overflow-hidden rounded-lg">
-          <img
-            src={s1}
-            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-            alt="Data Orchestration"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
 
-<section>
-  <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-    <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-10">
-      <div className="md:w-1/2 w-full p-1 md:p-4">
-        <div className="overflow-hidden rounded-lg">
-          <img
-            src={s2}
-            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-            alt="Business Intelligence & Analytics"
-          />
-        </div>
-      </div>
-      <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-        <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
-          Business Intelligence & Analytics
-        </h2>
-        <ul className="text-base pl-5 list-disc space-y-3 text-left">
-          <li>
-            Cognos Analytics for enterprise BI, reporting, and augmented
-            analytics with inbuilt AI
-          </li>
-          <li>
-            Integration with SAP Analytics Cloud, other BI tools, data
-            sources, and applications
-          </li>
-          <li>Custom report development and dashboard creation</li>
-          <li>Data modeling and ETL/ELT services</li>
-          <li>Training and enablement services</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-    <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-10">
-      <div className="md:w-1/2 w-full p-1 md:p-4">
-        <div className="overflow-hidden rounded-lg">
-          <img
-            src={s3}
-            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-            alt="Intelligent IT Automation"
-          />
-        </div>
-      </div>
-      <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-        <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
-          <b>Intelligent IT Automation</b>
-        </h2>
-        <ul className="text-base pl-5 list-disc space-y-3 text-left">
-          <li>
-            Enterprise Observability for application performance and
-            Infrastructure quality management
-          </li>
-          <li>AI powered Cloud and Finops</li>
-          <li>Incident management & sustainable IT</li>
-          <li>
-            ML services and ChatOps for streamlined IT service management
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-    <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-10">
-      <div className="md:w-1/2 w-full p-1 md:p-4">
-        <div className="overflow-hidden rounded-lg">
-          <img
-            src={s4}
-            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-            alt="Enterprise ML and Generative AI"
-          />
-        </div>
-      </div>
-      <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-        <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
-          <b>Enterprise ML and Generative AI</b>
-        </h2>
-        <ul className="text-base pl-5 list-disc space-y-3 text-left">
-          <li>Customer care and call center modernization</li>
-          <li>
-            Retrieval Augmented generation for knowledge self-service
-          </li>
-          <li>Conversational AI and virtual assistant development</li>
-          <li>Development and deployment of ML models</li>
-          <li>Responsible AI and model governance consulting</li>
-          <li>Integration with enterprise systems and applications</li>
-          <li>Data preparation and feature engineering services</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
       
     </>
