@@ -8,8 +8,16 @@ import s1 from "../../assets/images/s1.svg";
 import s3 from "../../assets/images/s3.svg";
 import s4 from "../../assets/images/s4.svg";
 import s2 from "../../assets/images/s2.svg";
+import ind1 from "../../assets/images/ind_1.png";
+import ind2 from "../../assets/images/ind_2.png";
+import ind3 from "../../assets/images/ind_3.png";
+import ind4 from "../../assets/images/ind_4.png";
+import ind5 from "../../assets/images/ind_5.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 
 const Home = () => {
+  
   const features = [
     "Easy to adopt",
     "Trusted, governed, secure and ethical",
@@ -18,6 +26,8 @@ const Home = () => {
     "Transformative",
     "By helping you gain a truly competitive edge over the market",
   ];
+
+
 
   return (
     <>
@@ -233,6 +243,149 @@ const Home = () => {
 
 
 
+      <section className="py-12 bg-gray-50">
+      <h1 className="text-4xl font-bold text-center mb-12">Industries</h1>
+
+      <div className="flex flex-wrap justify-between gap-6">
+        {/* Manufacturing Card */}
+        <div className="relative group w-full md:w-1/5 h-96 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src={ind1}
+            alt="Manufacturing"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end">
+            <div className="flex justify-between items-center text-white">
+              <p className="text-lg font-semibold">Manufacturing</p>
+              <FaLongArrowAltRight />
+            </div>
+          </div>
+          {/* Hover content */}
+          <div className="absolute inset-0 bg-blue-500 bg-opacity-90 p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="text-lg font-semibold text-white mb-4">
+              Manufacturing
+            </p>
+            <ul className="text-white space-y-2 text-sm">
+              <li>Predictive maintenance</li>
+              <li>Supply chain optimization</li>
+              <li>Cloudera workload optimization</li>
+              <li>SAP observability</li>
+              <li>High performance Analytics</li>
+              <li>AI assistants</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* BFSI Card */}
+        <div className="relative group w-full md:w-1/5 h-96 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src={ind2}
+            alt="BFSI"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end">
+            <div className="flex justify-between items-center text-white">
+              <p className="text-lg font-semibold">BFSI</p>
+              <FaLongArrowAltRight />
+            </div>
+          </div>
+          {/* Hover content */}
+          <div className="absolute inset-0 bg-blue-500 bg-opacity-90 p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="text-lg font-semibold text-white mb-4">BFSI</p>
+            <ul className="text-white space-y-2 text-sm">
+              <li>Customer Care</li>
+              <li>Virtual Agent, conversational search</li>
+              <li>App Modernisation</li>
+              <li>Code, AIops, Finops</li>
+              <li>Digital Labor</li>
+              <li>Fraud, Risk, Wealth management</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Call Center Upgrade Card */}
+        <div className="relative group w-full md:w-1/5 h-96 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src={ind3}
+            alt="Call Center Upgrade"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end">
+            <div className="flex justify-between items-center text-white">
+              <p className="text-lg font-semibold">Call Center Upgrade</p>
+              <FaLongArrowAltRight />
+            </div>
+          </div>
+          {/* Hover content */}
+          <div className="absolute inset-0 bg-blue-500 bg-opacity-90 p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="text-lg font-semibold text-white mb-4">
+              Call Center Upgrade
+            </p>
+            <ul className="text-white space-y-2 text-sm">
+              <li>Speech transcription</li>
+              <li>Voice agent - speech synthesis</li>
+              <li>Agent assist - productivity</li>
+              <li>Sentiment analytics</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Media Card */}
+        <div className="relative group w-full md:w-1/5 h-96 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src={ind4}
+            alt="Media"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end">
+            <div className="flex justify-between items-center text-white">
+              <p className="text-lg font-semibold">Media</p>
+              <FaLongArrowAltRight />
+            </div>
+          </div>
+          {/* Hover content */}
+          <div className="absolute inset-0 bg-blue-500 bg-opacity-90 p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="text-lg font-semibold text-white mb-4">Media</p>
+            <ul className="text-white space-y-2 text-sm">
+              <li>Generative AI language tasks</li>
+              <li>Content creation</li>
+              <li>Summarization</li>
+              <li>Entity Extraction</li>
+              <li>Productivity & Efficiency gains</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* IT/ITES Card */}
+        <div className="relative group w-full md:w-1/5 h-96 overflow-hidden rounded-lg shadow-lg">
+          <img
+            src={ind5}
+            alt="IT/ITES"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end">
+            <div className="flex justify-between items-center text-white">
+              <p className="text-lg font-semibold">IT/ITES</p>
+              <FaLongArrowAltRight />
+            </div>
+          </div>
+          {/* Hover content */}
+          <div className="absolute inset-0 bg-blue-500 bg-opacity-90 p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="text-lg font-semibold text-white mb-4">IT/ITES</p>
+            <ul className="text-white space-y-2 text-sm">
+              <li>Managed Security services</li>
+              <li>Data center and Cloud Solutions</li>
+              <li>Vendor Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
       
     </>
   );
