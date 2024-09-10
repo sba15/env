@@ -762,7 +762,7 @@ const DataAI = () => {
       </section>
       {/* YouTube Iframe Section */}
       <section className="my-5 py-5">
-        <div className="relative pb-[46.25%] h-0 overflow-hidden">
+        <div className="relative pb-[37.25%] h-0 overflow-hidden">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/2qhssWueRUI"
