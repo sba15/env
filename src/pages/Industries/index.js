@@ -92,19 +92,19 @@ const Industries = () => {
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-4 md:mt-6">
               <h2 className="text-3xl font-bold mb-6 md:mb-9 text-left text-gray-600">
-                <b>BFSI</b>
+                <b>Manufacturing</b>
               </h2>
               <ul className="text-2xl pl-5 list-disc space-y-5 text-left">
                 <p>
-                  SBA offers end-to-end services for the BFSI industry,
-                  including digital transformation, IT consulting,
-                  cybersecurity, data analytics, and regulatory compliance
+                  In the rapidly evolving manufacturing sector, we offer
+                  extensive IT services tailored for the manufacturing industry.
+                  The offerings include cloud solutions, data center
+                  modernization, information security, and managed services
                 </p>
                 <p>
-                  These solutions enhance operational efficiency, ensure data
-                  security, and support seamless integration of advanced
-                  technologies, helping financial institutions stay competitive
-                  and compliant
+                  We help optimize IT infrastructure, enhance cybersecurity, and
+                  leverage technologies like IoT and data analytics to improve
+                  operational efficiency and drive digital transformation
                 </p>
               </ul>
             </div>
