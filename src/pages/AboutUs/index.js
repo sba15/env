@@ -3,7 +3,6 @@ import "./style.scss";
 import aboutUs from "../../assets/videos/aboutUs.mp4";
 import about1 from "../../assets/images/about1.svg";
 import about2 from "../../assets/images/about2.svg";
-import s2 from "../../assets/images/s2.svg";
 
 const AboutUs = () => {
   return (
@@ -52,40 +51,48 @@ const AboutUs = () => {
         </div>
       </section>
 
-        <section>
-          <div className="flex flex-col md:flex-row justify-center items-center md:items-start p-4">
-            <div className="md:w-1/3 w-full">
-              <img
-                src={about2}
-                alt="Graphs and coins"
-                className="rounded-lg w-full h-auto object-cover"
-              />
+      <section>
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full p-1 md:p-4">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={about2}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Intelligent IT Automation"
+                />
+              </div>
             </div>
-            <div className="md:w-1/3 w-full mt-4 md:mt-0 md:ml-6">
-              <h2 className="font-bold text-xl mb-4 text-center md:text-left">
-                Integrated Solutions
-              </h2>
-              <ul className="list-disc pl-5 mb-6">
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h3 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+                <b>Integrated Solutions</b>
+              </h3>
+              <ul className="text-xl pl-5 list-disc space-y-4 text-left">
                 <li>
                   Observability, data management, analytics, and AI in one
                   platform
                 </li>
                 <li>
-                  Industry-specific solutions for BFSI, media, manufacturing, and
-                  IT
+                  Industry-specific solutions for BFSI, media, manufacturing,
+                  and IT
                 </li>
               </ul>
-              <h2 className="font-bold text-xl mb-4 text-center md:text-left">
-                Commitment to Excellence
-              </h2>
-              <ul className="list-disc pl-5">
+              <br />
+              <br />
+              <h3 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+                <b>Commitment to Excellence</b>
+              </h3>
+              <ul className="text-xl pl-5 list-disc space-y-4 text-left">
                 <li>Data governance, security, and compliance ensured</li>
                 <li>Responsible AI practices implemented</li>
               </ul>
             </div>
           </div>
-        </section>
-        
+        </div>
+      </section>
+
+
     </>
   );
 };
