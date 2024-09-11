@@ -15,9 +15,9 @@ const SolutionsPage = () => {
       <section>
         <div class="ai-green-v3">
           <div class="init-ai-section3">
-            <div className="abus3">Our Industry Expertise & Solutions</div>
-            <div class="init-red-bg px-5">
-              Customized solutions for every industry challenge
+            <div className="abusss3">Our Industry Expertise & Solutions</div>
+            <div class="init-red-bg ">
+              Customized solutions for every industry 
             </div>
           </div>
           <video autoPlay muted loop>

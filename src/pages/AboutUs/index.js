@@ -10,8 +10,8 @@ const AboutUs = () => {
       <section>
         <div class="ai-green-v1">
           <div class="init-ai-section1">
-            <div className="abus">About Us</div>
-            <div class="init-red-bg px-5">
+            <div className="abspage">About Us</div>
+            <div class="init-red-bg ">
               Intelligent Solutions, Limitless Potential
             </div>
           </div>

@@ -1,13 +1,13 @@
 
-.ai-green-v5 {
+.ai-green-Ins1 {
     position: relative;
     top: 0;
     left: 0;
 }
 
-.init-ai-section5 {
+.init-ai-sectionIns1 {
     position: absolute;
-    top: 35%;
+    top: 46%;
     left: 0%;
     display: flex;
     justify-content: center;
@@ -19,13 +19,13 @@
 }
 
 /* Default font size for larger screens */
-.init-ai-section5:nth-child(1) {
+.init-ai-sectionIns1:nth-child(1) {
     font-size: 3rem;
 }
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
-    .init-ai-section5:nth-child(1) {
+    .init-ai-sectionIns1:nth-child(1) {
         font-size: 1rem; /* Adjust this value as needed */
     }
 }
@@ -34,6 +34,13 @@
     background: red;
 }
 
-.abus1{
-    padding-right: 69%;
+.Ins1{
+    padding-right: 63%;
 }
+
+.Indusfirst{
+    padding-left: 15%;
+    margin: 5%;
+    font-size: 20px;
+}
+
