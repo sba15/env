@@ -10,7 +10,7 @@ import InfrastructureApplication from "../../src/pages/InfrastructureApplication
 import ContactUs from "../../src/pages/ContactUs/index.js";
 import AboutUs from "../../src/pages/AboutUs/index.js";
 import SolutionsPage from "../../src/pages/SolutionsPage/index.js";
-
+import ManagedService from "../../src/pages/ManagedService/index.js";
 const Main = () => {
   return (
     <Router>
@@ -20,7 +20,7 @@ const Main = () => {
         <Route path='/DataAI' element={<DataAI />} />
         <Route path='/Industries' element={<Industries />} />
         <Route path='/CyberResiliency' element={<CyberResiliency />} />
-        <Route path='/ManagedService' element={<DataAI />} />
+        <Route path='/ManagedService' element={<ManagedService />} />
         <Route path='/InfrastructureApplication' element={<InfrastructureApplication />} />
         <Route path='/ContactUs' element={<ContactUs />} />
         <Route path='/AboutUs' element={<AboutUs />} />

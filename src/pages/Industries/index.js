@@ -4,6 +4,9 @@ import Indus from "../../assets/videos/Industries.mp4";
 import Industries1 from "../../assets/images/Industries1.jpg";
 import Industries2 from "../../assets/images/Industries2.jpg";
 import Industries3 from "../../assets/images/Industries3.jpg";
+import Industries4 from "../../assets/images/Industries4.jpg";
+import Industries5 from "../../assets/images/Industries5.jpg";
+import Industries6 from "../../assets/images/Industries6.jpg";
 
 const Industries = () => {
   return (
@@ -129,7 +132,7 @@ const Industries = () => {
             <div className="md:w-1/2 w-full p-1 md:p-4 flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={Industries2}
+                  src={Industries4}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Enterprise ML and Generative AI"
@@ -178,7 +181,7 @@ const Industries = () => {
             <div className="md:w-1/2 w-full p-1 md:p-4 flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={Industries2}
+                  src={Industries5}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Enterprise ML and Generative AI"
@@ -195,7 +198,7 @@ const Industries = () => {
             <div className="md:w-1/2 w-full p-1 md:p-4 flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={Industries2}
+                  src={Industries6}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Enterprise ML and Generative AI"

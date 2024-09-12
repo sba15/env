@@ -153,36 +153,36 @@ const DataAI = () => {
         content: "Generative AI is a type of artificial intelligence that can create new content, such as text, images, or audio, based on patterns in data. It is used for tasks like content generation, language modeling, and image synthesis."
     },
     {
-        title: "What is Watson Assistant?",
-        content: "Watson Assistant is an AI-powered virtual agent that can engage in natural conversations to help users with a variety of tasks, such as answering questions, providing recommendations, and automating workflows."
+        title: "What is watson Assistant?",
+        content: "Watson assistant is an AI-powered virtual agent that can engage in natural conversations to help users with a variety of tasks, such as answering questions, providing recommendations, and automating workflows."
     },
     {
         title: "What is Conversational AI?",
         content: "Conversational AI refers to the use of artificial intelligence to enable human-like interactions between machines and humans through natural language processing and generation. It is used in chatbots, virtual assistants, and other interactive systems."
     },
     {
-        title: "What is the WatsonX Platform?",
-        content: "The WatsonX Platform is an open-source, cloud-native platform that provides a comprehensive set of tools and services for building, deploying, and managing AI and data applications. It includes components for data management, machine learning, and model deployment."
+        title: "What is the watsonX Platform?",
+        content: "The watsonX Platform is an open-source, cloud-native platform that provides a comprehensive set of tools and services for building, deploying, and managing AI and data applications. It includes components for data management, machine learning, and model deployment."
     },
     {
-        title: "What is WatsonX.ai?",
-        content: "WatsonX.ai is a set of AI services and tools within the WatsonX Platform that enables the development and deployment of AI applications. It includes capabilities for natural language processing, computer vision, and predictive analytics."
+        title: "What is watsonX.ai?",
+        content: "watsonX.ai is a set of AI services and tools within the WatsonX Platform that enables the development and deployment of AI applications. It includes capabilities for natural language processing, computer vision, and predictive analytics."
     },
     {
-        title: "What is WatsonX.data?",
-        content: "WatsonX.data is a set of data management services within the WatsonX Platform that provides a unified view of data across multiple sources and enables secure data sharing and collaboration. It includes capabilities for data cataloging, data virtualization, and data governance."
+        title: "What is watsonX.data?",
+        content: "watsonX.data is a set of data management services within the WatsonX Platform that provides a unified view of data across multiple sources and enables secure data sharing and collaboration. It includes capabilities for data cataloging, data virtualization, and data governance."
     },
     {
-        title: "What is WatsonX.governance?",
-        content: "WatsonX.governance is a set of governance and compliance services within the WatsonX Platform that ensures the responsible and ethical use of AI and data. It includes capabilities for model risk management, bias detection, and explainability."
+        title: "What is watsonX.governance?",
+        content: "watsonX.governance is a set of governance and compliance services within the WatsonX Platform that ensures the responsible and ethical use of AI and data. It includes capabilities for model risk management, bias detection, and explainability."
     },
     {
         title: "How can Generative AI be used in business?",
         content: "Generative AI can be used in business for tasks such as content creation, product design, and customer service. For example, it can be used to generate personalized marketing content, create product mockups, or provide automated customer support."
     },
     {
-        title: "What are the benefits of using Watson Assistant?",
-        content: "The benefits of using Watson Assistant include improved customer satisfaction, reduced support costs, and increased efficiency. It can handle a large volume of customer inquiries, provide consistent and accurate responses, and free up human agents to focus on more complex tasks."
+        title: "What are the benefits of using watson assistant?",
+        content: "The benefits of using watson assistant include improved customer satisfaction, reduced support costs, and increased efficiency. It can handle a large volume of customer inquiries, provide consistent and accurate responses, and free up human agents to focus on more complex tasks."
     },
     {
         title: "How can Conversational AI improve customer experience?",
