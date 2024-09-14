@@ -8,7 +8,6 @@ import solutions4 from "../../assets/images/solution4.jpg";
 import solutions5 from "../../assets/images/solution5.jpg";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-
 const SolutionsPage = () => {
   return (
     <>
@@ -17,7 +16,7 @@ const SolutionsPage = () => {
           <div class="init-ai-section3">
             <div className="abusss3">Our Industry Expertise & Solutions</div>
             <div class="init-red-bg ">
-              Customized solutions for every industry 
+              Customized solutions for every industry
             </div>
           </div>
           <video autoPlay muted loop>
@@ -42,9 +41,11 @@ const SolutionsPage = () => {
                 </p>
                 <p>
                   With a focus on innovation and expertise in emerging
-                  technologies like AI and large language models, we help
-                  businesses transform their IT infrastructure to achieve
-                  greater efficiency, security, and scalability
+                  technologies such as Data and AI, IT Automation, Security and
+                  Sustainability, and Open Hybrid Cloud, we help businesses
+                  transform their enterprise into agile, efficient, and secure
+                  operations, ensuring scalability and resilience in a rapidly
+                  changing digital landscape
                 </p>
               </ul>
             </div>
@@ -73,7 +74,9 @@ const SolutionsPage = () => {
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end">
               <div className="flex justify-between items-center text-white">
-                <p className="text-lg font-semibold">Infrastructure & application modernization</p>
+                <p className="text-lg font-semibold">
+                  Infrastructure & application modernization
+                </p>
                 <FaLongArrowAltRight />
               </div>
             </div>
@@ -134,13 +137,10 @@ const SolutionsPage = () => {
           If you're interested in exploring our expert Industry solutions or
           need more information, our experts are ready to assist you.
         </p>
-        <a
-          className="text-lg md:text-xl font-semibold text-black underline hover:text-gray-700 transition duration-300"
-        >
+        <a className="text-lg md:text-xl font-semibold text-black underline hover:text-gray-700 transition duration-300">
           Get a Call Back
         </a>
       </section>
-      
     </>
   );
 };
