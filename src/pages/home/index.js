@@ -7,10 +7,22 @@ import Home5 from "../../assets/videos/Home5.mp4";
 import Home6 from "../../assets/videos/Home6.mp4";
 import Home7 from "../../assets/images/Home7.jpg";
 import Home9 from "../../assets/videos/Home9.mp4";
+import Home11 from "../../assets/videos/Home11.mp4";
+import Home13 from "../../assets/videos/Home13.mp4";
+import Homeg3 from "../../assets/images/Homeg3.png";
+import Homeg4 from "../../assets/images/Homeg4.png";
+import Homeg5 from "../../assets/images/Homeg5.png";
+import Homeg6 from "../../assets/images/Homeg6.png";
+import Homeg7 from "../../assets/images/Homeg7.png";
+import Homeg8 from "../../assets/images/Homeg8.png";
+import Homeg9 from "../../assets/images/Homeg9.png";
+import Homeg11 from "../../assets/images/Homeg11.png";
+import Home15 from "../../assets/videos/Home15.mp4";
 import "./style.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Checkmark } from "react-checkmark";
 
 const Home = () => {
   const videos = [
@@ -36,7 +48,7 @@ const Home = () => {
 
   return (
     <>
-      <section>
+      {/* <section>
         <div className="ai-green-Home">
           <div className="init-ai-Home">
             <div>Empower Your Business with</div>
@@ -50,28 +62,224 @@ const Home = () => {
             </video>
           </div>
         </div>
+      </section> */}
+
+      <section>
+        <div className="ai-green-Home">
+          <div className="init-ai-Home">
+            <div>Eliminate the </div>
+            <div class="init-red-bg px-5">Mundane</div>
+          </div>
+          <video autoPlay muted loop>
+            <source src={Home1} type="video/mp4" />
+          </video>
+        </div>
       </section>
 
-      <div className="relative w-full h-screen overflow-hidden">
-       
-        <video autoPlay muted loop className="absolute ">
-          <source src={Home9} type="video/mp4" />
+      <section>
+        <div className="relative w-full h-screen">
+          {/* Background Video */}
+          <video className="absolute" autoPlay muted loop playsInline>
+            <source src={Home13} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* Content Overlay */}
+          <div className="relative z-10 flex items-center justify-between w-full h-full px-10 py-16">
+            {/* Left Side - Large Heading */}
+            <div className="w-[50%]">
+              <h2 className="text-black font-bold text-4xl md:text-5xl mb-36 leading-tight">
+                Enable people and organizations to achieve extraordinary
+                outcomes, effortlessly.
+              </h2>
+            </div>
+
+            {/* Right Side - Text and List */}
+            <div className="w-[40%] bg-white p-6 rounded-md shadow-md">
+              <h3 className="text-red-600 font-semibold text-xl mb-4">
+                For data-driven enterprises looking to create exceptional
+                customer and employee experience,
+              </h3>
+              <p className="text-gray-700 font-bold text-md mb-4">
+                SBA provides modular and sustainable AI solutions that are:
+              </p>
+              <ul className="list-none space-y-2">
+                <li className="flex items-start">
+                  <span className="text-red-500 text-xl mr-2">
+                    <Checkmark size="25px" color="red" />
+                  </span>
+                  <span>Easy to adopt</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 text-xl mr-2">
+                    <Checkmark size="25px" color="red" />
+                  </span>
+                  <span>Trusted, governed, secure, and ethical</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 text-xl mr-2">
+                    <Checkmark size="25px" color="red" />
+                  </span>
+                  <span>
+                    Focused on augmenting human intelligence, not replacing it
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 text-xl mr-2">
+                    <Checkmark size="25px" color="red" />
+                  </span>
+                  <span>Trained on your quality enterprise data</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 text-xl mr-2">
+                    <Checkmark size="25px" color="red" />
+                  </span>
+                  <span>
+                    Transformative – Helping you gain a truly competitive edge
+                    over the market
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="relative w-full h-screen">
+        {/* Background Video */}
+        <video className="absolute" autoPlay muted loop playsInline>
+          <source src={Home15} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        <div className="relative z-10 flex items-center justify-between w-full h-full px-1">
-          <div className="max-w-lg bg-white bg-opacity-70 p-8 rounded-lg shadow-lg">
-            <p className="text-lg md:text-xl font-bold text-black leading-relaxed">
-              In the modern workplace,{" "}
-              <span className="text-red-500">
-                repetitive tasks like data entry and information retrieval
-              </span>{" "}
-              hinder employees from engaging in strategic and creative aspects
-              of their roles.
-            </p>
+        {/* Content Overlay */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full">
+          {/* Title */}
+          <h2 className="text-white font-bold text-3xl md:text-5xl mb-10">
+            Intelligent Solutions
+          </h2>
+
+          {/* Cards Section */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-10">
+            {/* Card 1 */}
+            <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
+              <img
+                src={Homeg7}
+                alt="Infrastructure & Application Modernization"
+                className="h-16 mb-4"
+              />
+              <h3 className="text-center text-black font-semibold text-lg">
+                Infrastructure & Application Modernization
+              </h3>
+              <div className="border-t-4 border-red-600 w-full mt-4"></div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
+              <img
+                src={Homeg8}
+                alt="Cyber Resiliency"
+                className="h-16 mb-4"
+              />
+              <h3 className="text-center text-black font-semibold text-lg">
+                Cyber Resiliency
+              </h3>
+              <div className="border-t-4 border-red-600 w-full mt-4"></div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
+              <img
+                src={Homeg9}
+                alt="Data, Automation & AI"
+                className="h-16 mb-4"
+              />
+              <h3 className="text-center text-black font-semibold text-lg">
+                Data, Automation & AI
+              </h3>
+              <div className="border-t-4 border-red-600 w-full mt-4"></div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
+              <img
+                src={Homeg11}
+                alt="Managed Services"
+                className="h-16 mb-4"
+              />
+              <h3 className="text-center text-black font-semibold text-lg">
+                Managed Services
+              </h3>
+              <div className="border-t-4 border-red-600 w-full mt-4"></div>
+            </div>
           </div>
         </div>
       </div>
+
+      <section>
+        <div className="relative w-full h-screen">
+          <video autoPlay muted loop className="absolute ">
+            <source src={Home11} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="relative z-10  py-16 ml-[22%] w-[78%]">
+            <h2 className="text-red-600 font-semibold text-2xl md:text-2xl mb-12">
+              For core applications and domains of banking, insurance, and
+              institutions
+            </h2>
+            <p className="text-black text-2xl md:text-2xl mb-12">
+              We drastically simplify business and IT operations building{" "}
+              <span className="font-bold">
+                digital systems powered by AI, automation, and hybrid cloud
+                infrastructure
+              </span>
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
+              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md">
+                <h3 className="font-semibold text-xl mb-4">BFSI</h3>
+                <img src={Homeg3} alt="BFSI" className="mx-auto" />
+              </div>
+              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md">
+                <h3 className="font-semibold text-xl mb-4">Manufacturing</h3>
+                <img src={Homeg4} alt="Manufacturing" className="mx-auto" />
+              </div>
+              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md">
+                <h3 className="font-semibold text-xl mb-4">Media</h3>
+                <img src={Homeg5} alt="Media" className="mx-auto" />
+              </div>
+              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md">
+                <h3 className="font-semibold text-xl mb-4">IT/ITES</h3>
+                <img src={Homeg6} alt="IT/ITES" className="mx-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="relative w-full h-screen overflow-hidden">
+          <video autoPlay muted loop className="absolute ">
+            <source src={Home9} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="relative z-10 flex items-center justify-between w-full h-full px-1">
+            <div className=" bg-white bg-opacity-70 p-8 rounded-lg shadow-lg">
+              <p className="text-lg md:text-2xl font-bold text-black leading-relaxed">
+                In the modern workplace,{" "}
+                <span className="text-red-500">
+                  repetitive tasks like data entry and information retrieval
+                </span>{" "}
+              </p>
+              <p className="text-lg md:text-2xl font-bold text-black leading-relaxed">
+                hinder employees from engaging in strategic and creative aspects
+                of their roles
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="relative h-screen">
         <div className="absolute inset-0 flex justify-center items-center z-10 text-center">
