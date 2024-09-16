@@ -19,8 +19,9 @@ const Navbar = ({ isTransparent }) => {
       <nav className="flex flex-col md:flex-row items-center w-[92%] mx-auto py-4">
         {/* Logo section */}
         <div className="flex w-full md:w-auto items-center">
-          <img className="w-16 cursor-pointer" src={sbalogo} alt="Logo" />
-
+          <a href="/">
+          <img className="w-16 cursor-pointer" src={sbalogo} alt="Logo"  />
+          </a>
           <div className="block md:hidden ml-auto">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +53,7 @@ const Navbar = ({ isTransparent }) => {
             <li>
               <a
                 className="hover:text-gray-500 transition duration-500 font-medium"
-                href="#"
+                href="/ManagedService"
               >
                 Services
               </a>
@@ -60,7 +61,7 @@ const Navbar = ({ isTransparent }) => {
             <li>
               <a
                 className="hover:text-gray-500 transition duration-500 font-medium"
-                href="#"
+                href="/Industries"
               >
                 Industries
               </a>
@@ -68,7 +69,7 @@ const Navbar = ({ isTransparent }) => {
             <li>
               <a
                 className="hover:text-gray-500 transition duration-500 font-medium"
-                href="#"
+                
               >
                 Client stories
               </a>
@@ -76,14 +77,14 @@ const Navbar = ({ isTransparent }) => {
             <li>
               <a
                 className="hover:text-gray-500 transition duration-500 font-medium"
-                href="#"
+                
               >
                 Resources
               </a>
             </li>
           </ul>
           <button className="bg-[#ff0000] text-white px-5 py-2 rounded-full hover:bg-[#c00707] mt-4 md:mt-0">
-            Request a demo
+           <a href="/ContactUs"> Request a demo</a>
           </button>
         </div>
       </nav>

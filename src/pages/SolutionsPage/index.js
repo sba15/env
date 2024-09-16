@@ -66,6 +66,7 @@ const SolutionsPage = () => {
       <section className="py-12 bg-gray-200">
         <div className="flex flex-wrap justify-between gap-0 px-5">
           <div className="relative group w-full md:w-1/5 h-96 overflow-hidden rounded-lg shadow-lg">
+          <a href="/InfrastructureApplication">
             <img
               src={solutions2}
               alt="Manufacturing"
@@ -80,9 +81,11 @@ const SolutionsPage = () => {
                 <FaLongArrowAltRight />
               </div>
             </div>
+            </a>
           </div>
 
           <div className="relative group w-full md:w-1/5 h-96 overflow-hidden rounded-lg shadow-lg">
+          <a href="/CyberResiliency">
             <img
               src={solutions3}
               alt="BFSI"
@@ -95,9 +98,11 @@ const SolutionsPage = () => {
                 <FaLongArrowAltRight />
               </div>
             </div>
+            </a>
           </div>
 
           <div className="relative group w-full md:w-1/5 h-96 overflow-hidden rounded-lg shadow-lg">
+          <a href="/DataAI">
             <img
               src={solutions4}
               alt="Call Center Upgrade"
@@ -110,9 +115,11 @@ const SolutionsPage = () => {
                 <FaLongArrowAltRight />
               </div>
             </div>
+            </a>
           </div>
 
           <div className="relative group w-full md:w-1/5 h-96 overflow-hidden rounded-lg shadow-lg">
+          <a href="/ManagedService">
             <img
               src={solutions5}
               alt="Media"
@@ -125,6 +132,7 @@ const SolutionsPage = () => {
                 <FaLongArrowAltRight />
               </div>
             </div>
+            </a>
           </div>
         </div>
       </section>
@@ -137,7 +145,7 @@ const SolutionsPage = () => {
           If you're interested in exploring our expert Industry solutions or
           need more information, our experts are ready to assist you.
         </p>
-        <a className="text-lg md:text-xl font-semibold text-black underline hover:text-gray-700 transition duration-300">
+        <a className="text-lg md:text-xl font-semibold text-black underline hover:text-gray-700 transition duration-300" href="/ContactUs">
           Get a Call Back
         </a>
       </section>

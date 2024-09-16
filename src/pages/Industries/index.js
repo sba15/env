@@ -234,7 +234,7 @@ const Industries = () => {
           If you're interested in exploring our solutions or need more
           information, our experts are ready to assist you
         </p>
-        <a className="text-lg md:text-xl font-semibold text-black underline hover:text-gray-700 transition duration-300">
+        <a className="text-lg md:text-xl font-semibold text-black underline hover:text-gray-700 transition duration-300" href="/ContactUs">
           Get a Call Back
         </a>
       </section>
