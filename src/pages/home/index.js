@@ -61,7 +61,6 @@ import com40 from "../../assets/images/company40.jpg";
 import com41 from "../../assets/images/company41.png";
 import com42 from "../../assets/images/company42.png";
 
-
 import "./style.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -76,12 +75,52 @@ const Home = () => {
   ];
 
   const Discover = [
-    com13, com14, com15, com16, com17, com18, com19, com20, com21, com22, com23, com24, com25, 
-    com26, com27, com28, com29, com30, com31, com32, com33, com34, com35, com36, com37, com38, 
-    com39, com40, com41, com42
+    com13,
+    com14,
+    com15,
+    com16,
+    com17,
+    com18,
+    com19,
+    com20,
+    com21,
+    com22,
+    com23,
+    com24,
+    com25,
+    com26,
+    com27,
+    com28,
+    com29,
+    com30,
+    com31,
+    com32,
+    com33,
+    com34,
+    com35,
+    com36,
+    com37,
+    com38,
+    com39,
+    com40,
+    com41,
+    com42,
   ];
-  
-  const Ecosys = [com1, com2, com3,com4,com5,com6,com7,com8,com9,com10,com11,com12];
+
+  const Ecosys = [
+    com1,
+    com2,
+    com3,
+    com4,
+    com5,
+    com6,
+    com7,
+    com8,
+    com9,
+    com10,
+    com11,
+    com12,
+  ];
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [fadeIn, setFadeIn] = useState(true);
@@ -119,8 +158,14 @@ const Home = () => {
       <section>
         <div className="ai-green-Home">
           <div className="init-ai-Home">
-            <div>Eliminate the </div>
-            <div class="init-red-bg px-5">Mundane</div>
+            <div className="  md:hidden">
+              <div className="init-red-bg px-5">Eliminate the Mundane</div>
+            </div>
+
+            <div className="hidden md:block ">
+              <div className="">Eliminate the</div>
+              <div className="init-red-bg px-5">Mundane</div>
+            </div>
           </div>
           <video autoPlay muted loop>
             <source src={Home1} type="video/mp4" />
@@ -128,33 +173,32 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
-        <div className="relative w-full h-screen">
-          {/* Background Video */}
-          <video className="absolute" autoPlay muted loop playsInline>
+      <section className="responsive-video-section">
+        <div className="relative w-full min-h-screen">
+          <video className="absolute " autoPlay muted loop playsInline>
             <source src={Home13} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
-          {/* Content Overlay */}
-          <div className="relative z-10 flex items-center justify-between w-full h-full px-10 py-16">
-            {/* Left Side - Large Heading */}
-            <div className="w-[50%]">
-              <h2 className="text-black font-bold text-4xl md:text-5xl mb-36 leading-tight">
+          <div
+            className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full h-full px-4 py-8 sm:px-6 sm:py-12 md:px-10 md:py-16"
+            style={{ paddingTop: "10%" }}
+          >
+            <div className="w-full md:w-[50%] mb-6 md:mb-0 text-center md:text-left">
+              <h2 className="text-black font-bold text-3xl sm:text-4xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight">
                 Enable people and organizations to achieve extraordinary
                 outcomes, effortlessly.
               </h2>
             </div>
-
-            {/* Right Side - Text and List */}
-            <div className="w-[40%] bg-white p-6 rounded-md shadow-md">
-              <h3 className="text-red-600 font-semibold text-xl mb-4">
+            <div className="w-full md:w-[40%] bg-white bg-opacity-80 p-4 sm:p-6 rounded-md shadow-md">
+              <h3 className="text-red-600 font-semibold text-lg sm:text-xl mb-4">
                 For data-driven enterprises looking to create exceptional
                 customer and employee experience,
               </h3>
-              <p className="text-gray-700 font-bold text-md mb-4">
+              <p className="text-gray-700 font-bold text-sm sm:text-md mb-4">
                 SBA provides modular and sustainable AI solutions that are:
               </p>
+
               <ul className="list-none space-y-2">
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
@@ -197,103 +241,120 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="relative w-full h-screen">
-        {/* Background Video */}
-        <video className="absolute" autoPlay muted loop playsInline>
-          <source src={Home15} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <section>
+        <div className="relative w-full h-screen">
+          <video
+            className="absolute inset-0 object-cover w-full h-full"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src={Home15} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
 
-        {/* Content Overlay */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full">
-          {/* Title */}
-          <h2 className="text-white font-bold text-3xl md:text-5xl mb-10">
-            Intelligent Solutions
-          </h2>
+          <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50">
+            <h2 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-center px-4">
+              Intelligent Solutions
+            </h2>
 
-          {/* Cards Section */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-10">
-            {/* Card 1 */}
-            <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src={Homeg7}
-                alt="Infrastructure & Application Modernization"
-                className="h-16 mb-4"
-              />
-              <h3 className="text-center text-black font-semibold text-lg">
-                Infrastructure & Application Modernization
-              </h3>
-              <div className="border-t-4 border-red-600 w-full mt-4"></div>
-            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 md:px-10 w-full max-w-screen-xl">
+              <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
+                <img
+                  src={Homeg7}
+                  alt="Infrastructure & Application Modernization"
+                  className="h-12 md:h-16 mb-4"
+                />
+                <h3 className="text-center text-black font-semibold text-base md:text-lg">
+                  Infrastructure & Application Modernization
+                </h3>
+                <div className="border-t-4 border-red-600 w-full mt-4"></div>
+              </div>
 
-            {/* Card 2 */}
-            <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
-              <img src={Homeg8} alt="Cyber Resiliency" className="h-16 mb-4" />
-              <h3 className="text-center text-black font-semibold text-lg">
-                Cyber Resiliency
-              </h3>
-              <div className="border-t-4 border-red-600 w-full mt-4"></div>
-            </div>
+              <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
+                <img
+                  src={Homeg8}
+                  alt="Cyber Resiliency"
+                  className="h-12 md:h-16 mb-4"
+                />
+                <h3 className="text-center text-black font-semibold text-base md:text-lg">
+                  Cyber Resiliency
+                </h3>
+                <div className="border-t-4 border-red-600 w-full mt-4"></div>
+              </div>
 
-            {/* Card 3 */}
-            <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src={Homeg9}
-                alt="Data, Automation & AI"
-                className="h-16 mb-4"
-              />
-              <h3 className="text-center text-black font-semibold text-lg">
-                Data, Automation & AI
-              </h3>
-              <div className="border-t-4 border-red-600 w-full mt-4"></div>
-            </div>
+              <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
+                <img
+                  src={Homeg9}
+                  alt="Data, Automation & AI"
+                  className="h-12 md:h-16 mb-4"
+                />
+                <h3 className="text-center text-black font-semibold text-base md:text-lg">
+                  Data, Automation & AI
+                </h3>
+                <div className="border-t-4 border-red-600 w-full mt-4"></div>
+              </div>
 
-            {/* Card 4 */}
-            <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
-              <img src={Homeg11} alt="Managed Services" className="h-16 mb-4" />
-              <h3 className="text-center text-black font-semibold text-lg">
-                Managed Services
-              </h3>
-              <div className="border-t-4 border-red-600 w-full mt-4"></div>
+              <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
+                <img
+                  src={Homeg11}
+                  alt="Managed Services"
+                  className="h-12 md:h-16 mb-4"
+                />
+                <h3 className="text-center text-black font-semibold text-base md:text-lg">
+                  Managed Services
+                </h3>
+                <div className="border-t-4 border-red-600 w-full mt-4"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section>
         <div className="relative w-full h-screen">
-          <video autoPlay muted loop className="absolute ">
+          <video autoPlay muted loop playsInline className="absolute ">
             <source src={Home11} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
-          <div className="relative z-10  py-16 ml-[22%] w-[78%]">
-            <h2 className="text-red-600 font-semibold text-2xl md:text-2xl mb-12">
+          <div className="relative z-10 py-16 w-full md:ml-[22%] md:w-[78%] px-4 sm:px-6 sm:py-10">
+            <h2 className="text-red-600 font-semibold text-xl sm:text-2xl md:text-2xl mb-6 sm:mb-12 text-center md:text-left">
               For core applications and domains of banking, insurance, and
               institutions
             </h2>
-            <p className="text-black text-2xl md:text-2xl mb-12">
-              We drastically simplify business and IT operations building{" "}
+
+            <p className="text-black text-lg sm:text-xl md:text-2xl mb-6 sm:mb-12 text-center md:text-left">
+              We drastically simplify business and IT operations by building{" "}
               <span className="font-bold">
                 digital systems powered by AI, automation, and hybrid cloud
                 infrastructure
               </span>
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
-              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md">
-                <h3 className="font-semibold text-xl mb-4">BFSI</h3>
+
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 px-4 md:px-0">
+              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md text-center">
+                <h3 className="font-semibold text-lg sm:text-xl mb-4">BFSI</h3>
                 <img src={Homeg3} alt="BFSI" className="mx-auto" />
               </div>
-              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md">
-                <h3 className="font-semibold text-xl mb-4">Manufacturing</h3>
+
+              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md text-center">
+                <h3 className="font-semibold text-lg sm:text-xl mb-4">
+                  Manufacture
+                </h3>
                 <img src={Homeg4} alt="Manufacturing" className="mx-auto" />
               </div>
-              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md">
-                <h3 className="font-semibold text-xl mb-4">Media</h3>
+
+              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md text-center">
+                <h3 className="font-semibold text-lg sm:text-xl mb-4">Media</h3>
                 <img src={Homeg5} alt="Media" className="mx-auto" />
               </div>
-              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md">
-                <h3 className="font-semibold text-xl mb-4">IT/ITES</h3>
+
+              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md text-center">
+                <h3 className="font-semibold text-lg sm:text-xl mb-4">
+                  IT/ITES
+                </h3>
                 <img src={Homeg6} alt="IT/ITES" className="mx-auto" />
               </div>
             </div>
@@ -327,23 +388,6 @@ const Home = () => {
 
       <section className="relative h-screen">
         <div className="absolute inset-0 flex justify-center items-center z-10 text-center">
-          <p className="text-white text-2xl md:text-3xl lg:text-4xl px-4">
-            The problem is not that computers will begin to think like men, It’s
-            that men will begin to think like computers
-          </p>
-        </div>
-        <video
-          autoPlay
-          muted
-          loop
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        >
-          <source src={Home5} type="video/mp4" />
-        </video>
-      </section>
-
-      <section className="relative h-screen">
-        <div className="absolute inset-0 flex justify-center items-center z-10 text-center">
           <div className="text-white px-4">
             <h1 className="text-white text-3xl md:text-5xl font-bold">
               Our mission
@@ -370,96 +414,29 @@ const Home = () => {
         <div className="absolute inset-0 bg-black opacity-50 z-5"></div>
       </section>
 
-      {/* <section className="w-full bg-gray-50">
-        <div className="py-10">
-          <div className="mx-auto px-4 mb-10 max-w-screen-xl">
-            <div className="flex justify-between items-start">
-              <div className="w-full md:w-1/2">
-                <h2 className="text-3xl font-bold mb-4">
-                  Discover how businesses become more intelligent with SBA
-                </h2>
-              </div>
-
-              <div className="w-full md:w-1/2 text-right">
-                <p className="text-lg text-gray-600 mb-6">
-                  IT teams and business functions of all sizes are leveraging
-                  our expertise to create value for themselves and their
-                  customers.
-                </p>
-                <a className="text-lg">
-                  View customer stories →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="mx-auto px-4 max-w-screen-xl">
-            <h3 className="text-lg font-semibold text-center mb-4 init-red-bg1">
-              Trusted by talented leaders at:
-            </h3>
-
-            <Slider
-              dots={false}
-              infinite={true}
-              speed={500}
-              slidesToShow={5}
-              slidesToScroll={1}
-              autoplay={true}
-              autoplaySpeed={2000}
-              nextArrow={
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              }
-              prevArrow={
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M15 5l-7 7 7 7"
-                    />
-                  </svg>
-                </div>
-              }
-            >
-              {[
-                "/path/to/logo1.png",
-                "/path/to/logo2.png",
-                "/path/to/logo3.png",
-              ].map((logo, index) => (
-                <div key={index} className="px-2">
-                  <img
-                    src={logo}
-                    alt={`Company logo ${index + 1}`}
-                    className="mx-auto h-16"
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
+      <section className="relative w-full h-screen overflow-hidden">
+        <div className="absolute inset-0 flex justify-center items-center z-10 text-center px-4">
+          <p className="text-base sm:text-lg md:text-2xl lg:text-4xl xl:text-4xl leading-relaxed">
+            <span className="text-black">
+              The problem is not that computers will begin to think like men,
+            </span>
+            <span className="text-red-500">
+              {" "}
+              It’s that men will begin to think like computers
+            </span>
+          </p>
         </div>
-      </section> */}
+
+        <video
+          autoPlay
+          muted
+          loop
+          className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
+        >
+          <source src={Home5} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
 
       <section className="w-full bg-gray-50">
         <div className="py-10">
@@ -577,86 +554,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="w-full bg-gray-50">
-        <div className="py-10">
-          <div className="mx-auto px-4 mb-10 max-w-screen-xl">
-            <div className="flex flex-col items-center text-center">
-              <h2 className="text-3xl font-bold mb-4">Our partner ecosystem</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Empowering our success through the collective strength and
-                expertise of our partner network
-              </p>
-            </div>
-          </div>
-
-          <div className="mx-auto px-4 max-w-screen-xl text-center">
-            <h3 className="text-lg font-semibold mb-4 init-red-bg1">
-              Trusted by talented leaders at:
-            </h3>
-
-            <Slider
-              dots={false}
-              infinite={true}
-              speed={500}
-              slidesToShow={5}
-              slidesToScroll={1}
-              autoplay={true}
-              autoplaySpeed={2000}
-              nextArrow={
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              }
-              prevArrow={
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M15 5l-7 7 7 7"
-                    />
-                  </svg>
-                </div>
-              }
-            >
-              {[
-                "/path/to/logo1.png",
-                "/path/to/logo2.png",
-                "/path/to/logo3.png",
-              ].map((logo, index) => (
-                <div key={index} className="px-2">
-                  <img
-                    src={logo}
-                    alt={`Company logo ${index + 1}`}
-                    className="mx-auto h-16"
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-      </section> */}
 
       <section className="w-full bg-gray-50">
         <div className="py-10">

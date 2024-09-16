@@ -1,8 +1,0 @@
-[build]
-  command = "npm run build" # or "yarn build" if using yarn
-  publish = "build"         # This should be the folder where your built files are placed, usually "build" for React
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
