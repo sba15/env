@@ -18,6 +18,50 @@ import Homeg8 from "../../assets/images/Homeg8.png";
 import Homeg9 from "../../assets/images/Homeg9.png";
 import Homeg11 from "../../assets/images/Homeg11.png";
 import Home15 from "../../assets/videos/Home15.mp4";
+import com1 from "../../assets/images/company1.png";
+import com2 from "../../assets/images/company2.png";
+import com3 from "../../assets/images/company3.png";
+import com4 from "../../assets/images/company4.png";
+import com5 from "../../assets/images/company5.png";
+import com6 from "../../assets/images/company6.png";
+import com7 from "../../assets/images/company7.png";
+import com8 from "../../assets/images/company8.png";
+import com9 from "../../assets/images/company9.png";
+import com10 from "../../assets/images/company10.jpeg";
+import com11 from "../../assets/images/company11.png";
+import com12 from "../../assets/images/company12.png";
+import com13 from "../../assets/images/company13.png";
+import com14 from "../../assets/images/company14.png";
+import com15 from "../../assets/images/company15.png";
+import com16 from "../../assets/images/company16.png";
+import com17 from "../../assets/images/company17.jpeg";
+import com18 from "../../assets/images/company18.png";
+import com19 from "../../assets/images/company19.png";
+import com20 from "../../assets/images/company20.jpeg";
+import com21 from "../../assets/images/company21.png";
+import com22 from "../../assets/images/company22.jpeg";
+import com23 from "../../assets/images/company23.png";
+import com24 from "../../assets/images/company24.png";
+import com25 from "../../assets/images/company25.png";
+import com26 from "../../assets/images/company26.png";
+import com27 from "../../assets/images/company27.png";
+import com28 from "../../assets/images/company28.jpg";
+import com29 from "../../assets/images/company29.jpg";
+import com30 from "../../assets/images/company30.jpeg";
+import com31 from "../../assets/images/company31.jpeg";
+import com32 from "../../assets/images/company32.png";
+import com33 from "../../assets/images/company33.png";
+import com34 from "../../assets/images/company34.png";
+import com35 from "../../assets/images/company35.png";
+import com36 from "../../assets/images/company36.png";
+import com37 from "../../assets/images/company37.jpg";
+import com38 from "../../assets/images/company38.png";
+import com39 from "../../assets/images/company39.png";
+import com40 from "../../assets/images/company40.jpg";
+import com41 from "../../assets/images/company41.png";
+import com42 from "../../assets/images/company42.png";
+
+
 import "./style.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -30,6 +74,14 @@ const Home = () => {
     { video: Home2, text: "Innovate with AI-Powered Insights" },
     { video: Home3, text: "Unlock the Future with AI" },
   ];
+
+  const Discover = [
+    com13, com14, com15, com16, com17, com18, com19, com20, com21, com22, com23, com24, com25, 
+    com26, com27, com28, com29, com30, com31, com32, com33, com34, com35, com36, com37, com38, 
+    com39, com40, com41, com42
+  ];
+  
+  const Ecosys = [com1, com2, com3,com4,com5,com6,com7,com8,com9,com10,com11,com12];
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [fadeIn, setFadeIn] = useState(true);
@@ -176,11 +228,7 @@ const Home = () => {
 
             {/* Card 2 */}
             <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src={Homeg8}
-                alt="Cyber Resiliency"
-                className="h-16 mb-4"
-              />
+              <img src={Homeg8} alt="Cyber Resiliency" className="h-16 mb-4" />
               <h3 className="text-center text-black font-semibold text-lg">
                 Cyber Resiliency
               </h3>
@@ -202,11 +250,7 @@ const Home = () => {
 
             {/* Card 4 */}
             <div className="bg-white p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src={Homeg11}
-                alt="Managed Services"
-                className="h-16 mb-4"
-              />
+              <img src={Homeg11} alt="Managed Services" className="h-16 mb-4" />
               <h3 className="text-center text-black font-semibold text-lg">
                 Managed Services
               </h3>
@@ -326,7 +370,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black opacity-50 z-5"></div>
       </section>
 
-      <section className="w-full bg-gray-50">
+      {/* <section className="w-full bg-gray-50">
         <div className="py-10">
           <div className="mx-auto px-4 mb-10 max-w-screen-xl">
             <div className="flex justify-between items-start">
@@ -342,7 +386,7 @@ const Home = () => {
                   our expertise to create value for themselves and their
                   customers.
                 </p>
-                <a href="/customer-stories" className="text-lg">
+                <a className="text-lg">
                   View customer stories →
                 </a>
               </div>
@@ -415,6 +459,90 @@ const Home = () => {
             </Slider>
           </div>
         </div>
+      </section> */}
+
+      <section className="w-full bg-gray-50">
+        <div className="py-10">
+          <div className="mx-auto px-4 mb-10 max-w-screen-xl">
+            <div className="flex justify-between items-start">
+              <div className="w-full md:w-1/2">
+                <h2 className="text-3xl font-bold mb-4">
+                  Discover how businesses become more intelligent with SBA
+                </h2>
+              </div>
+              <div className="w-full md:w-1/2 text-right">
+                <p className="text-lg text-gray-600 mb-6">
+                  IT teams and business functions of all sizes are leveraging
+                  our expertise to create value for themselves and their
+                  customers.
+                </p>
+                <a className="text-lg">View customer stories →</a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-auto px-8 max-w-screen-xl">
+            <h3 className="text-lg font-semibold text-center mb-4 init-red-bg1">
+              Trusted by talented leaders at:
+            </h3>
+
+            <Slider
+              dots={false}
+              infinite={true}
+              speed={500}
+              slidesToShow={5}
+              slidesToScroll={1}
+              autoplay={true}
+              autoplaySpeed={2000}
+              nextArrow={
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-gray-700"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              }
+              prevArrow={
+                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-gray-700"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M15 5l-7 7 7 7"
+                    />
+                  </svg>
+                </div>
+              }
+            >
+              {Discover.map((logo, index) => (
+                <div key={index} className="px-2">
+                  <img
+                    src={logo}
+                    alt={`Company logo ${index + 1}`}
+                    className="mx-auto h-16"
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
       </section>
 
       <section
@@ -450,7 +578,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="w-full bg-gray-50">
+      {/* <section className="w-full bg-gray-50">
         <div className="py-10">
           <div className="mx-auto px-4 mb-10 max-w-screen-xl">
             <div className="flex flex-col items-center text-center">
@@ -517,6 +645,82 @@ const Home = () => {
                 "/path/to/logo2.png",
                 "/path/to/logo3.png",
               ].map((logo, index) => (
+                <div key={index} className="px-2">
+                  <img
+                    src={logo}
+                    alt={`Company logo ${index + 1}`}
+                    className="mx-auto h-16"
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="w-full bg-gray-50">
+        <div className="py-10">
+          <div className="mx-auto px-4 mb-10 max-w-screen-xl">
+            <div className="flex flex-col items-center text-center">
+              <h2 className="text-3xl font-bold mb-4">Our partner ecosystem</h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Empowering our success through the collective strength and
+                expertise of our partner network
+              </p>
+            </div>
+          </div>
+
+          <div className="mx-auto px-6 max-w-screen-xl text-center">
+            <h3 className="text-lg font-semibold mb-4 init-red-bg1">
+              Trusted by talented leaders at:
+            </h3>
+
+            <Slider
+              dots={false}
+              infinite={true}
+              speed={500}
+              slidesToShow={5}
+              slidesToScroll={1}
+              autoplay={true}
+              autoplaySpeed={2000}
+              nextArrow={
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-gray-700"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              }
+              prevArrow={
+                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-gray-700"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M15 5l-7 7 7 7"
+                    />
+                  </svg>
+                </div>
+              }
+            >
+              {Ecosys.map((logo, index) => (
                 <div key={index} className="px-2">
                   <img
                     src={logo}
