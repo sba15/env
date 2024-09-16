@@ -719,9 +719,9 @@ const Home = () => {
                 <option value="" disabled>
                   Choose a Solution/Service
                 </option>
-                <option value="service1">Service 1</option>
-                <option value="service2">Service 2</option>
-                <option value="service3">Service 3</option>
+                <option value="service1">Data and AI</option>
+                <option value="service2">Infra</option>
+                <option value="service3">Business support</option>
               </select>
             </div>
             <div>
