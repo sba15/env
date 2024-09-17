@@ -149,46 +149,56 @@ const DataAI = () => {
 
   const accordionData = [
     {
-        title: "What is Generative AI?",
-        content: "Generative AI is a type of artificial intelligence that can create new content, such as text, images, or audio, based on patterns in data. It is used for tasks like content generation, language modeling, and image synthesis."
+      title: "What is Generative AI?",
+      content:
+        "Generative AI is a type of artificial intelligence that can create new content, such as text, images, or audio, based on patterns in data. It is used for tasks like content generation, language modeling, and image synthesis.",
     },
     {
-        title: "What is watson Assistant?",
-        content: "Watson assistant is an AI-powered virtual agent that can engage in natural conversations to help users with a variety of tasks, such as answering questions, providing recommendations, and automating workflows."
+      title: "What is watson Assistant?",
+      content:
+        "Watson assistant is an AI-powered virtual agent that can engage in natural conversations to help users with a variety of tasks, such as answering questions, providing recommendations, and automating workflows.",
     },
     {
-        title: "What is Conversational AI?",
-        content: "Conversational AI refers to the use of artificial intelligence to enable human-like interactions between machines and humans through natural language processing and generation. It is used in chatbots, virtual assistants, and other interactive systems."
+      title: "What is Conversational AI?",
+      content:
+        "Conversational AI refers to the use of artificial intelligence to enable human-like interactions between machines and humans through natural language processing and generation. It is used in chatbots, virtual assistants, and other interactive systems.",
     },
     {
-        title: "What is the watsonX Platform?",
-        content: "The watsonX Platform is an open-source, cloud-native platform that provides a comprehensive set of tools and services for building, deploying, and managing AI and data applications. It includes components for data management, machine learning, and model deployment."
+      title: "What is the watsonX Platform?",
+      content:
+        "The watsonX Platform is an open-source, cloud-native platform that provides a comprehensive set of tools and services for building, deploying, and managing AI and data applications. It includes components for data management, machine learning, and model deployment.",
     },
     {
-        title: "What is watsonX.ai?",
-        content: "watsonX.ai is a set of AI services and tools within the WatsonX Platform that enables the development and deployment of AI applications. It includes capabilities for natural language processing, computer vision, and predictive analytics."
+      title: "What is watsonX.ai?",
+      content:
+        "watsonX.ai is a set of AI services and tools within the WatsonX Platform that enables the development and deployment of AI applications. It includes capabilities for natural language processing, computer vision, and predictive analytics.",
     },
     {
-        title: "What is watsonX.data?",
-        content: "watsonX.data is a set of data management services within the WatsonX Platform that provides a unified view of data across multiple sources and enables secure data sharing and collaboration. It includes capabilities for data cataloging, data virtualization, and data governance."
+      title: "What is watsonX.data?",
+      content:
+        "watsonX.data is a set of data management services within the WatsonX Platform that provides a unified view of data across multiple sources and enables secure data sharing and collaboration. It includes capabilities for data cataloging, data virtualization, and data governance.",
     },
     {
-        title: "What is watsonX.governance?",
-        content: "watsonX.governance is a set of governance and compliance services within the WatsonX Platform that ensures the responsible and ethical use of AI and data. It includes capabilities for model risk management, bias detection, and explainability."
+      title: "What is watsonX.governance?",
+      content:
+        "watsonX.governance is a set of governance and compliance services within the WatsonX Platform that ensures the responsible and ethical use of AI and data. It includes capabilities for model risk management, bias detection, and explainability.",
     },
     {
-        title: "How can Generative AI be used in business?",
-        content: "Generative AI can be used in business for tasks such as content creation, product design, and customer service. For example, it can be used to generate personalized marketing content, create product mockups, or provide automated customer support."
+      title: "How can Generative AI be used in business?",
+      content:
+        "Generative AI can be used in business for tasks such as content creation, product design, and customer service. For example, it can be used to generate personalized marketing content, create product mockups, or provide automated customer support.",
     },
     {
-        title: "What are the benefits of using watson assistant?",
-        content: "The benefits of using watson assistant include improved customer satisfaction, reduced support costs, and increased efficiency. It can handle a large volume of customer inquiries, provide consistent and accurate responses, and free up human agents to focus on more complex tasks."
+      title: "What are the benefits of using watson assistant?",
+      content:
+        "The benefits of using watson assistant include improved customer satisfaction, reduced support costs, and increased efficiency. It can handle a large volume of customer inquiries, provide consistent and accurate responses, and free up human agents to focus on more complex tasks.",
     },
     {
-        title: "How can Conversational AI improve customer experience?",
-        content: "Conversational AI can improve customer experience by providing 24/7 support, personalized recommendations, and seamless interactions across multiple channels. It can also gather valuable customer insights and feedback to help businesses improve their products and services."
-    }
-];
+      title: "How can Conversational AI improve customer experience?",
+      content:
+        "Conversational AI can improve customer experience by providing 24/7 support, personalized recommendations, and seamless interactions across multiple channels. It can also gather valuable customer insights and feedback to help businesses improve their products and services.",
+    },
+  ];
 
   return (
     <>
@@ -706,61 +716,65 @@ const DataAI = () => {
       </section>
       <section className="pt-0 md:pt-5 w-full">
         <div className="w-full mx-auto px-4 md:px-6">
-          {" "}
-          {/* Added padding here */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            {/* Watsonx.ai Card */}
-            <div
-              className="h-60 bg-no-repeat bg-cover"
-              style={{ backgroundImage: `url(${bg})` }} // Using template literal
-            >
-              <p className="flex items-end justify-center h-3/5 text-2xl font-black">
-                watson<span className="text-blue-600">x</span>.ai
-              </p>
-              <div className="flex justify-end px-3 mt-5">
-                <img src={rt_arrow} loading="lazy" alt="arrow" />
+            <a href="https://www.ibm.com/products/watsonx-ai">
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${bg})` }}
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl font-black">
+                  watson<span className="text-blue-600">x</span>.ai
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
               </div>
-            </div>
+            </a>
 
-            {/* Watsonx.data Card */}
-            <div
-              className="h-60 bg-no-repeat bg-cover"
-              style={{ backgroundImage: `url(${bg})` }} // Reusing the background image
-            >
-              <p className="flex items-end justify-center h-3/5 text-2xl font-black">
-                watson<span className="text-blue-600">x</span>.data
-              </p>
-              <div className="flex justify-end px-3 mt-5">
-                <img src={rt_arrow} loading="lazy" alt="arrow" />
+            <a href="https://www.ibm.com/products/watsonx-data">
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${bg})` }} 
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl font-black">
+                  watson<span className="text-blue-600">x</span>.data
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
               </div>
-            </div>
+            </a>
 
-            {/* Watsonx.governance Card */}
-            <div
-              className="h-60 bg-no-repeat bg-cover"
-              style={{ backgroundImage: `url(${bg})` }} // Reusing the background image
-            >
-              <p className="flex items-end justify-center h-3/5 text-2xl font-black">
-                watson<span className="text-blue-600">x</span>.governance
-              </p>
-              <div className="flex justify-end px-3 mt-5">
-                <img src={rt_arrow} loading="lazy" alt="arrow" />
+            <a href="https://www.ibm.com/products/watsonx-governance">
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${bg})` }} 
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl font-black">
+                  watson<span className="text-blue-600">x</span>.governance
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
               </div>
-            </div>
+            </a>
 
-            {/* Red Hat OpenShift Card */}
-            <div className="h-60 bg-gray-100 rounded-lg">
-              <p className="flex items-end justify-center h-3/5 text-2xl font-black">
-                <img src={red_hat} alt="Red Hat" />
-              </p>
-              <div className="flex justify-end px-3 mt-5">
-                <img src={rt_arrow} loading="lazy" alt="arrow" />
+            <a href="https://www.redhat.com/en/technologies/all-products">
+              <div className="h-60 bg-gray-100 rounded-lg">
+                <p className="flex items-end justify-center h-3/5 text-2xl font-black">
+                  <img src={red_hat} alt="Red Hat" />
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
-      {/* YouTube Iframe Section */}
+
+
+
       <section className="my-5 py-5">
         <div className="relative pb-[37.25%] h-0 overflow-hidden">
           <iframe
@@ -793,7 +807,7 @@ const DataAI = () => {
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
               >
-                Get a Call Back
+                <a href="/ContactUs"> Get a Call Back</a>
               </button>
 
               {/* Brochure Download Button */}
@@ -879,7 +893,6 @@ const DataAI = () => {
           </div>
         </div>
       </section>
-      
     </>
   );
 };
