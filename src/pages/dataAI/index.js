@@ -316,7 +316,7 @@ const DataAI = () => {
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
               <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
-                Business Intelligence & Analytics
+                Business Intelligence & Analytics 
               </h2>
               <ul className="text-base pl-5 list-disc space-y-3 text-left">
                 <li>
